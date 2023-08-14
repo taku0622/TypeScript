@@ -36,3 +36,9 @@ const person3 = {
   },
   age: 21
 }
+
+// array
+// 型注釈
+const fruits1: string[] = ['Apple', 'Banana', 'Grape']
+// 型推論
+const fruits2 = ['Apple', 'Banana', 'Grape']
