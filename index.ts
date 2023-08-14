@@ -28,3 +28,11 @@ const person2 = {
   name: 'jack',
   age: 21
 }
+// 型推論
+const person3 = {
+  name: {
+    first: 'Jack',
+    last: 'Smith'
+  },
+  age: 21
+}
