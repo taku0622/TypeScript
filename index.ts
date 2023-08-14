@@ -2,7 +2,7 @@ let hello: string = 'hello';
 console.log(hello);
 
 // boolean
-let hasValue: boolean = true;
+let hasValue = true;
 
 // number
 let count: number = 10;
@@ -13,3 +13,18 @@ let negative: number = -0.12;
 let single: string = 'hello';
 let double: string = "hello";
 let back: string = `hello`;
+
+// object
+// 型注釈
+const person1: {
+  name: string;
+  age: number;
+} = {
+  name: 'jack',
+  age: 21
+}
+// 型推論
+const person2 = {
+  name: 'jack',
+  age: 21
+}
