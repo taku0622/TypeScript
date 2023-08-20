@@ -79,3 +79,12 @@ const coffee = {
 //   GRANDE, // 2
 //   VENTI // 3
 // }
+
+// any
+let anything: any = true;
+anything = 'hello';
+anything = ['hello', 33, true];
+anything = {};
+anything.name = 'john';
+let banana = anything; // こんなこともできてしまう。
+console.log(banana); // { name: 'john}
