@@ -88,3 +88,9 @@ anything = {};
 anything.name = 'john';
 let banana = anything; // こんなこともできてしまう。
 console.log(banana); // { name: 'john}
+
+// union
+let unionType: string | number = 10;
+unionType.toString; // numberで使えるメソッド
+unionType = 'hello';
+unionType.toUpperCase; // Stringで使えるメソッド
