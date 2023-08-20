@@ -46,7 +46,36 @@ const fruits2 = ['Apple', 'Banana', 'Grape']
 // Tuple
 const book: [string, number, boolean] = ['business', 1500, false];
 book.push(21);
-book[1] = 700;
+book[1] = 700; // 値変更
 
-console.log(book[2]);
-console.log(book[3]);
+// Enum
+// const CoffeeSize = {
+//   SHORT: 'SHORT',
+//   TALL: 'TALL',
+//   GRANDE: 'GRANDE',
+//   VENTI: 'VENTI'
+// }
+// const coffee = {
+//   hot: true,
+//   size: CoffeeSize.TALL
+// }
+// coffee.size = 'hello' // 値変更できてしまう。
+// sizeを4つからしか選べないようにする
+// CoffeeSizeをenum型にする
+enum CoffeeSize {
+  SHORT = 'SHORT',
+  TALL = 'TALL',
+  GRANDE = 'GRANDE',
+  VENTI = 'VENTI'
+}
+const coffee = {
+  hot: true,
+  size: CoffeeSize.TALL
+}
+// 初期化を省略すると要素数が入る
+// enum CoffeeSize {
+//   SHORT, // 0
+//   TALL, // 1
+//   GRANDE, // 2
+//   VENTI // 3
+// }
