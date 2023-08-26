@@ -94,3 +94,6 @@ let unionType: string | number = 10;
 unionType.toString; // numberで使えるメソッド
 unionType = 'hello';
 unionType.toUpperCase; // Stringで使えるメソッド
+let unionTypes: (number | string)[] = [21, 'hello', 5]; // 配列
+
+
