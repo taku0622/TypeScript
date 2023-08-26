@@ -77,4 +77,26 @@ anything = ['hello', 33, true];
 anything = {};
 anything.name = 'john';
 var banana = anything; // こんなこともできてしまう。
-console.log(banana);
+console.log(banana); // { name: 'john}
+// union
+var unionType = 10;
+unionType.toString; // numberで使えるメソッド
+unionType = 'hello';
+unionType.toUpperCase; // Stringで使えるメソッド
+var unionTypes = [21, 'hello', 5]; // 配列
+// literal
+var apple = 'apple';
+var clothSize = 'large';
+var cloth = {
+    color: 'white',
+    size: 'large'
+};
+// 関数：足し算
+function add(num1, num2) {
+    return num1 + num2;
+}
+add(3, 4);
+function sayHello() {
+    console.log('hello!');
+}
+console.log(sayHello());

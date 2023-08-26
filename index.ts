@@ -116,3 +116,13 @@ function add(num1: number, num2: number): number {
   return num1 + num2;
 }
 add(3, 4);
+
+const anotherAdd: (n1: number, n2: number) => number = add;
+
+const doubleNum = (number: number) => number * 2
+
+function sayHello(): void {
+  console.log('hello!');
+}
+sayHello()
+// console.log(sayHello());
