@@ -98,10 +98,14 @@ let unionTypes: (number | string)[] = [21, 'hello', 5]; // 配列
 
 // literal
 const apple: 'apple' = 'apple';
-let clothSize: 'small' | 'medium' | 'large' = 'large';
+let clothSize: clothSize = 'large';
+
+
+// typeエイリアス
+type clothSize = 'small' | 'medium' | 'large';
 const cloth: {
   color: string,
-  size: 'small' | 'medium' | 'large'
+  size: clothSize
 } = {
   color: 'white',
   size: 'large'
