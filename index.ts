@@ -119,7 +119,8 @@ add(3, 4);
 
 const anotherAdd: (n1: number, n2: number) => number = add;
 
-const doubleNum = (number: number) => number * 2
+const doubleNum1 = (num: number): number => num * 2
+const doubleNum2: (num: number) => number = num => num * 2
 
 function sayHello(): void {
   console.log('hello!');
